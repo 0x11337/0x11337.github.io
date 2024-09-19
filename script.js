@@ -72,14 +72,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 const fileItem = document.createElement('div');
                 fileItem.className = 'file-item';
                 fileItem.innerHTML = `
-                    <h3>${file.title}</h3>
-                    <p>${file.description}</p>
-                    <a href="${file.downloadLink}" download>Download</a>
-                `;
+              <h3>${file.title}</h3>
+              <p>${file.description}</p>
+              <a href="${file.downloadLink}" download target="_blank">Download</a>
+          `;
                 filesList.appendChild(fileItem);
             });
         });
 });
+
 
 // Show blog post in modal
 function showPost(title) {
